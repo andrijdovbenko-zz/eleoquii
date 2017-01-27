@@ -204,18 +204,9 @@ main nav a:hover{
 	color: #A8BD5E;
 }
 
-main form{
+#search{
 	float:right;
 	display: inline-block;
-}
-
-#search {
-    border-radius: 6px;
-    box-sizing: border-box;
-    height: 26px;
-    margin: 7px 0;
-    padding: 0 7px;
-    width: 184px;
 }
 
 .search {
@@ -270,11 +261,6 @@ main form{
 	color: #42658B;
 }
 
-.product_right{
-	outline: 1px solid red;
-	height: 800px;
-}
-
 section{
 	position: relative;
 }
@@ -287,12 +273,6 @@ section{
 .product_left{
 	width: calc(100% - 490px);
 	display: inline-block;
-}
-
-.product_right{
-	width: 440px;
-	float: right;
-	display: inline-block;x;
 }
 
 .watch{
@@ -315,6 +295,345 @@ section{
 	height: auto;
 	max-width: 375px;
 }
+
+.product_right{
+	font-family: arial;
+	font-family: sans-serif;
+	font-stretch: ultra-condensed;
+	color: #3f444a;
+	width: 440px;
+	float: right;
+	display: inline-block;
+	font-size: 16px;
+	height: 800px;
+}
+
+.product_right .top{
+	border-bottom: 1px solid black;
+}
+
+.product_right .left{
+	width: 160px;
+	display: inline-block;
+}
+
+
+.product_right .left h3{
+	margin: 0;
+	font-size: 21px;
+}
+
+.product_right .prise .now{
+	color: #E18298;
+}
+
+.product_right .prise .was{
+	text-decoration: line-through;
+	font-size: 13px;
+}
+
+.product_right .right{
+	float: right;
+	text-align: right;
+}
+
+.product_parameters h3{
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.product_parameters form>div{
+	display: inline-table;
+	width: 45%;
+}
+
+/*selection of color*/
+
+.color_radio{
+  position: relative;
+  width: 140px;
+  display: inline-block;
+}
+
+.color_radio>div{
+	position: relative;
+	margin:0 0 3px 0;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+}
+
+.radio + label {
+  cursor: pointer;
+}
+
+.radio:not(checked) {
+  position: relative;
+  opacity: 0;
+}
+
+.label {
+  position: relative;
+  padding: 0 0 0 60px;
+}
+
+.radio:not(checked) + label::before {
+  background: #d7dce0 none repeat scroll 0 0;
+  box-sizing: border-box;
+  content: "";
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: -4px;
+  width: 30px;
+}
+
+.radio:not(checked) + label::after {
+    background: #d7dce0 none repeat scroll 0 0;
+    content: " ";
+    font-size: 14px;
+    height: 26px;
+    left: 2px;
+    line-height: 26px;
+    position: absolute;
+    text-align: center;
+    top: -2px;
+    width: 26px;
+}
+
+.radio:checked + label::before {
+    background: white none repeat scroll 0 0;
+    border: 1px solid black;
+}
+
+.radio:checked + label::after {
+    height: 24px;
+    line-height: 24px;
+    margin: 1px;
+    width: 24px;
+}
+
+.radio:checked + label[for="black"]::after, .radio:not(checked) + label[for="black"]::after{
+	background: black none repeat scroll 0 0;
+}
+
+.radio:checked + label[for="white"]::after, .radio:not(checked) + label[for="white"]::after{
+	background: white none repeat scroll 0 0;
+}
+
+.radio:checked + label[for="grey"]::after, .radio:not(checked) + label[for="grey"]::after{
+	background: #989A95 none repeat scroll 0 0;
+}
+
+.radio:checked + label[for="violet"]::after, .radio:not(checked) + label[for="violet"]::after{
+	background: #69699B none repeat scroll 0 0;
+}
+
+.radio:checked + label[for="blue"]::after, .radio:not(checked) + label[for="blue"]::after{
+	background: #161692 none repeat scroll 0 0;
+}
+
+.radio:checked + label[for="light-blue"]::after, .radio:not(checked) + label[for="light-blue"]::after{
+	background: #25B4EE none repeat scroll 0 0;
+}
+
+/*quontity*/
+
+.quontity input{
+  width: 39px;
+  height: 27px;
+  background-color: #F2F2F2;
+  text-align: center;
+  color: black;
+  border: 1px solid grey;
+}
+
+.quontity input:focus{
+  background-color: white;
+}
+
+/*size selection*/
+
+.size_checkbox{
+  position: relative;
+  width: 110px;
+  display: inline-block;
+}
+
+.size_checkbox>div{
+  position: relative;
+  margin:0 0 3px 0;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+
+.checkbox + label {
+  cursor: pointer;
+}
+
+.checkbox:not(checked) {
+  position: relative;
+  opacity: 0;
+}
+
+.label {
+  position: relative;
+  padding: 0 0 0 60px;
+}
+
+.checkbox:not(checked) + label::before {
+  background: #d7dce0 none repeat scroll 0 0;
+  box-sizing: border-box;
+  content: "";
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: -4px;
+  width: 30px;
+}
+
+.checkbox:not(checked) + label::after {
+    background: #d7dce0 none repeat scroll 0 0;
+    content: " ";
+    font-size: 14px;
+    height: 26px;
+    left: 2px;
+    line-height: 26px;
+    position: absolute;
+    text-align: center;
+    top: -2px;
+    width: 26px;
+}
+
+.checkbox:checked + label::before {
+    background: white none repeat scroll 0 0;
+    border: 1px solid black;
+}
+
+.checkbox:checked + label::after {
+    height: 24px;
+    line-height: 24px;
+    margin: 1px;
+    width: 24px;
+}
+
+.checkbox:not(checked) + label[for="size_14"]::after{
+  content: "14";
+}
+
+.checkbox:not(checked) + label[for="size_16"]::after{
+  content: "16";
+}
+
+.checkbox:not(checked) + label[for="size_18"]::after{
+  content: "18";
+}
+
+.checkbox:not(checked) + label[for="size_20"]::after{
+  content: "20";
+}
+
+.checkbox:not(checked) + label[for="size_22"]::after{
+  content: "22";
+}
+
+.checkbox:not(checked) + label[for="size_24"]::after{
+  content: "24";
+}
+
+.checkbox[disabled="disabled"] + label::after{
+  background-color: #EFF0F2;
+}
+
+.checkbox[disabled="disabled"] + label::before{
+  background-color: #EFF0F2;
+}
+
+.size_selection a{
+	font-size: 11px;
+	color: #42658B;
+	position: relative;
+	top: 7px;
+}
+
+/*submit*/
+
+.product_parameters_submit{
+	margin-top: 44px;
+}
+
+.product_parameters_submit input[type="submit"]{
+  box-sizing: border-box;
+  width: 145px;
+  height: 30px;
+  border: 1px solid #F2F2F2;
+  background-color: #A2CD37;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-stretch: ultra-condensed;
+}
+
+.free_shipping{
+	height: 44px;
+	border: 1px dotted black;
+	line-height: 44px;
+	text-transform: uppercase;
+	padding-left: 17px;
+	font-size: 11px;
+	margin-top: 33px;
+}
+
+.free_shipping h2{
+	margin:0;
+}
+
+.tabs{
+	margin-top: 26px;
+}
+
+.tabs label{
+	text-transform: uppercase;
+	width: 30%;
+	height: 17px;
+	line-height: 17px;
+}
+
+.tabs_container > div, .tabs_container > input { 
+	display: none; 
+}
+
+.tabs_container > div{
+	height: 222px;
+	padding: 15px;
+} 
+
+.tabs_container label { 
+	padding: 5px; 
+	border: 1px solid #aaa; 
+	cursor: pointer; 
+	position: relative; 
+	bottom: 1px; 
+	background: #E7E8EC;
+	display: inline-block;
+	top: 2px; 
+}
+
+.tabs_container .tab:checked + label { 
+	border-bottom: 2px solid #fff;
+	background-color: white; 
+}
+
+.tabs_container > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.tabs_container > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.tabs_container > input:nth-of-type(3):checked ~ div:nth-of-type(3) {
+	 display: block; 
+	 padding: 15px; 
+	 border: 1px solid #aaa;
+	 margin-right: 1px; 
+ } 
 
 aside{
 	width: 133px;
@@ -485,7 +804,7 @@ footer span{
 
 
 @media only screen and (max-width : 990px) {
-	header>div, main>div, section{
+	header>div, main>div, section, .address{
 		padding: 0 5px;
 	}
 
