@@ -380,6 +380,14 @@ section{
 	width: 45%;
 }
 
+.stars{
+	cursor: pointer;
+}
+
+.gold_star{
+	color:#E4C600;
+}
+
 /*selection of color*/
 
 .color_radio{

@@ -19,4 +19,10 @@ $(document).ready(function(){
     $("#navigation").click(function(){
     	$(".nav_and_form nav").slideToggle("fast");
     })
+
+    $(".stars>span").click(function(event){
+    	$(event.delegateTarget).parent().children().removeClass("gold_star")
+    	$(event.delegateTarget).addClass("gold_star");
+    	$(event.delegateTarget).prevAll().addClass("gold_star");
+    })
 });
