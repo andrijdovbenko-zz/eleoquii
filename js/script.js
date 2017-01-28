@@ -10,4 +10,13 @@ $(document).ready(function(){
     	}
         
     });
+
+    $(".reviews_header p").click(function(){
+    	$(".new_review").slideToggle("slow");
+
+    });
+
+    $("#navigation").click(function(){
+    	$(".nav_and_form nav").slideToggle("fast");
+    })
 });

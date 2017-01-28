@@ -181,7 +181,7 @@ main nav{
 	font-family: sans-serif;
 }
 
-main nav a {
+main nav a{
 	font-size: 15px;
 	font-weight: bold;
     color: #3f444a;
@@ -202,6 +202,26 @@ main nav a:last-child{
 
 main nav a:hover{
 	color: #A8BD5E;
+}
+
+#navigation{
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+    display: inline-block;
+    padding: 13px 18px;
+    text-transform: uppercase;
+    display: none;
+    color: #A8BD5E;
+	background-color: #F8F8FA;
+	box-shadow:inset 0 0 10px #E1E2E6;
+	width: 180px;
+	text-align: center;
+}
+
+#navigation:hover{
+	background-color: white;
+	cursor: pointer;
 }
 
 #search{
@@ -669,11 +689,12 @@ section{
  	text-decoration: none;
  	line-height: 26px;
  	font-size: 14px;
-
  }
+
 .icons_container a:nth-child(3){
 	width: auto;
 }
+
 .icons_container span:hover{
 	border-bottom: 1px solid #DC143C;
 	color: #DC143C; 
@@ -693,15 +714,46 @@ section{
 	line-height: 30px;
 }
 
-.reviews_header a{
+.reviews_header p{
 	float: right;
 	line-height: 30px;
 	color: #42658B;
 	font-size: 16px;
+	text-decoration: underline;
 }
 
-.reviews_header a:hover{
+.reviews_header p:hover{
 	color: #DC143C; 
+}
+
+.new_review{
+	margin: 10px 0;
+	display: none;
+}
+
+.new_review textarea{
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.new_review input{
+	box-sizing: border-box;
+	width: 145px;
+	height: 30px;
+	border: 1px solid #F2F2F2;
+	background-color: #A2CD37;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	font-stretch: ultra-condensed;
+}
+
+.new_review input:hover{
+	background-color: #CACA36;
+	cursor: pointer;
 }
 
 .review{
@@ -735,9 +787,6 @@ section{
 ..review p:last-child:hover{
 	color: #DC143C; 
 }
-
-
-
 
 aside{
 	width: 133px;
@@ -887,7 +936,7 @@ footer span{
 
 @media only screen and (max-width : 1140px) {
 	main nav a {
-	    padding: 13px 9px;
+	    padding: 13px 6px;
 	}
 
 	.images img{
@@ -900,7 +949,7 @@ footer span{
 }
 
 @media only screen and (max-width : 1030px) {
-	.social span{
+	footer .social span{
 		display: none;
 	}
 
@@ -956,4 +1005,29 @@ footer span{
 	}
 
 	
+}
+
+@media only screen and (max-width : 1030px) {
+	.nav_and_form nav{
+		display: none;
+		position: absolute;
+		z-index: 5;
+		width: 216px;
+		height: 315px;
+	}
+
+	.nav_and_form nav a{
+		display: block;
+		background-color: #F8F8FA;
+	}
+
+	.nav_and_form nav a:first-child{
+		padding-left: 6px;
+	}
+
+
+	#navigation{
+		display: inline-block;
+	}
+
 }
