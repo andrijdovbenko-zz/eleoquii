@@ -323,18 +323,31 @@ section{
 	font-size: 21px;
 }
 
-.product_right .prise .now{
+.product_right .top{
+	height: 60px;
+}
+
+.product_right .top .prise .now{
 	color: #E18298;
 }
 
-.product_right .prise .was{
+.product_right .top .prise .was{
 	text-decoration: line-through;
 	font-size: 13px;
 }
 
-.product_right .right{
+.product_right .top .right{
 	float: right;
 	text-align: right;
+}
+
+.product_right .top .right a{
+	color: #42658B;
+	font-size: 16px;
+}
+
+.product_right .top .right a:hover{
+	color: #DC143C;
 }
 
 .product_parameters h3{
@@ -576,9 +589,14 @@ section{
   font-stretch: ultra-condensed;
 }
 
+.product_parameters_submit input[type="submit"]:hover{
+	background-color: #CACA36;
+	cursor: pointer;
+}
+
 .free_shipping{
 	height: 44px;
-	border: 1px dotted black;
+	border: 2px dotted black;
 	line-height: 44px;
 	text-transform: uppercase;
 	padding-left: 17px;
@@ -634,6 +652,92 @@ section{
 	 border: 1px solid #aaa;
 	 margin-right: 1px; 
  } 
+
+ .icons_container{
+ 	height: 60px;
+ 	margin-top: 5px;
+ }
+
+  .icons_container i{
+ 	color:#363D4E; 
+ }
+
+ .icons_container a{
+ 	display: inline-table;
+ 	width: 175px;
+ 	color: #42658B;
+ 	text-decoration: none;
+ 	line-height: 26px;
+ 	font-size: 14px;
+
+ }
+.icons_container a:nth-child(3){
+	width: auto;
+}
+.icons_container span:hover{
+	border-bottom: 1px solid #DC143C;
+	color: #DC143C; 
+}
+
+.castomer_reviews{
+	margin-top: 10px;
+}
+
+.reviews_header{
+	height: 35px;
+	border-bottom: 2px dotted grey;
+}
+
+.reviews_header h3{
+	display: inline;
+	line-height: 30px;
+}
+
+.reviews_header a{
+	float: right;
+	line-height: 30px;
+	color: #42658B;
+	font-size: 16px;
+}
+
+.reviews_header a:hover{
+	color: #DC143C; 
+}
+
+.review{
+	padding: 25px 0;
+	border-bottom: 5px solid #FAFAFA;
+	font-size: 15px;
+}
+
+.review h4{
+	font-size: 15px;
+	font-weight: bold;
+	margin:0;
+}
+
+.review .stars{
+	display: block;
+	margin: 4px 0;
+}
+
+.read_more{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.review p:last-child{
+	color: #42658B;
+	font-size: 16px;
+}
+
+..review p:last-child:hover{
+	color: #DC143C; 
+}
+
+
+
 
 aside{
 	width: 133px;
