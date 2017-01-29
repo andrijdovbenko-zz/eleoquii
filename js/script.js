@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+	/* toggle read more - read less*/
     $(".review p:last-child").click(function(event){
     	if(!$(event.delegateTarget).prev().hasClass('read_more')){
     		$(event.delegateTarget).prev().addClass('read_more');
@@ -11,14 +13,20 @@ $(document).ready(function(){
         
     });
 
+    /*new review*/
+
     $(".reviews_header p").click(function(){
     	$(".new_review").slideToggle("slow");
 
     });
 
+    /*nav on small divices*/
+
     $("#navigation").click(function(){
     	$(".nav_and_form nav").slideToggle("fast");
-    })
+    });
+
+    /*stars rating*/
 
     $(".stars>span").click(function(event){
     	$(event.delegateTarget).parent().children().removeClass("gold_star")

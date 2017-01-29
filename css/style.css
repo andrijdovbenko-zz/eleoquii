@@ -175,6 +175,7 @@ header nav a:hover{
 
 .nav_and_form{
 	background-color: #F8F8FA;
+	overflow: hidden;
 }
 main nav{
 	height: 47px;
@@ -204,6 +205,13 @@ main nav a:last-child{
 
 main nav a:hover{
 	color: #A8BD5E;
+}
+
+#selected{
+	color: #A8BD5E;
+	background-color: white;
+	box-shadow:inset 0 0 10px #E1E2E6;
+	height: 30px;
 }
 
 #navigation{
@@ -246,7 +254,7 @@ main nav a:hover{
     border: none;
     outline: none;
     -webkit-appearance: none;
-    width: 147px; 
+    width: 135px;
     vertical-align: middle;
     background-color: white;
     padding:0 7px;
@@ -259,12 +267,7 @@ main nav a:hover{
     border: none;
     background-color: white;
     border-radius: 6px;
-}
-
-#selected{
-	color: #A8BD5E;
-	background-color: white;
-	box-shadow:inset 0 0 10px #E1E2E6;
+    float: right;
 }
 
 .address{
@@ -822,6 +825,7 @@ content: "20";
 .review p:last-child{
 	color: #42658B;
 	font-size: 16px;
+	display: inline-block;
 }
 
 .review p:last-child:hover{
@@ -976,11 +980,7 @@ footer span{
 
 
 
-
-
-
-
-
+/*Media queries*/
 
 
 @media only screen and (max-width : 1225px) {
