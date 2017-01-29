@@ -96,6 +96,7 @@ header>div, main>div, .address, section{
 	position: relative;
 	padding: 8px;
 	font-size: 13px;
+	font-family: arial
 }
 
 .shoping_bag img {
@@ -270,11 +271,19 @@ main nav a:hover{
 	color: #A7A7A7;
 }
 
-.address span{
+.address span, .address span a{
 	margin-right: 12px;
 	font-family: sans-serif;
 	font-size: 12px;
 	color: #A7A7A7;
+}
+
+.address span a{
+	text-decoration: none;
+}
+
+.address span a:hover{
+	text-decoration: underline;
 }
 
 .address span:last-child{
@@ -325,7 +334,6 @@ section{
 	float: right;
 	display: inline-block;
 	font-size: 16px;
-	height: 800px;
 }
 
 .product_right .top{
@@ -485,8 +493,9 @@ section{
   height: 27px;
   background-color: #F2F2F2;
   text-align: center;
-  color: black;
+  color: grey;
   border: 1px solid grey;
+  font-family: arial;
 }
 
 .quontity input:focus{
@@ -928,6 +937,10 @@ footer span{
 	display: inline-block;
 	position: relative;
 	top:8px;
+}
+
+.social img:hover{
+	opacity: 0.75;
 }
 
 
