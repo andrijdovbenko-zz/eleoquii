@@ -32,5 +32,18 @@ $(document).ready(function(){
     	$(event.delegateTarget).parent().children().removeClass("blue_star")
     	$(event.delegateTarget).addClass("blue_star");
     	$(event.delegateTarget).prevAll().addClass("blue_star");
-    })
+    });
+
+    $(".stars>span").click(function(event){
+    	$(event.delegateTarget).parent().children().removeClass("blue_star")
+    	$(event.delegateTarget).addClass("blue_star");
+    	$(event.delegateTarget).prevAll().addClass("blue_star");
+    });
+
+    $(".stars>span").hover(function(event){
+    	$(event.delegateTarget).addClass("gold_star");
+    	$(event.delegateTarget).prevAll().addClass("gold_star");
+    },function(event){
+    	$(event.delegateTarget).parent().children().removeClass("gold_star")
+    }); 
 });
