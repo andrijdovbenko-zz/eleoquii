@@ -399,10 +399,11 @@ section{
 
 .stars{
 	cursor: pointer;
+	color: #C0C0C0;
 }
 
-.gold_star{
-	color:#E4C600;
+.blue_star{
+	color:#113162;
 }
 
 /*selection of color*/

@@ -29,8 +29,8 @@ $(document).ready(function(){
     /*stars rating*/
 
     $(".stars>span").click(function(event){
-    	$(event.delegateTarget).parent().children().removeClass("gold_star")
-    	$(event.delegateTarget).addClass("gold_star");
-    	$(event.delegateTarget).prevAll().addClass("gold_star");
+    	$(event.delegateTarget).parent().children().removeClass("blue_star")
+    	$(event.delegateTarget).addClass("blue_star");
+    	$(event.delegateTarget).prevAll().addClass("blue_star");
     })
 });
