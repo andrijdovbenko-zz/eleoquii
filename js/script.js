@@ -45,5 +45,14 @@ $(document).ready(function(){
     	$(event.delegateTarget).prevAll().addClass("gold_star");
     },function(event){
     	$(event.delegateTarget).parent().children().removeClass("gold_star")
-    }); 
+    });
+
+    /*images*/
+
+     $(".product_left .images img").click(function(event){
+        let smallImgSrc = $(event.delegateTarget).attr("src");
+        let bigImgSrc = $("#big_img").attr("src");
+        $("#big_img").attr("src", smallImgSrc);
+        $(event.delegateTarget).attr("src", bigImgSrc);
+     });
 });
