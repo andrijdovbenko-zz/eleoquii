@@ -55,4 +55,13 @@ $(document).ready(function(){
         $("#big_img").attr("src", smallImgSrc);
         $(event.delegateTarget).attr("src", bigImgSrc);
      });
+
+     /*scroll to reviews*/
+
+     $('a[href="#reviews"]').click( function (event) {
+        event.preventDefault();
+        let id  = $(this).attr('href');
+        let top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 750);
+    });
 });
